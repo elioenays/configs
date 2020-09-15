@@ -1,0 +1,2 @@
+# configs
+configs vscode/terminal
