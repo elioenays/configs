@@ -12,7 +12,7 @@ function Write-Theme {
      # write user
     $user = $sl.CurrentUser
     if (Test-NotDefaultUser($user)) {
-        $prompt += Write-Prompt -Object "@$user" -ForegroundColor $sl.Colors.PromptHighlightColor
+        $prompt += Write-Prompt -Object "$user" -ForegroundColor $sl.Colors.PromptHighlightColor
        
         # write in for folder
         $prompt += Write-Prompt -Object " in " -ForegroundColor $sl.Colors.PromptForegroundColor
@@ -20,7 +20,7 @@ function Write-Theme {
 
 
     #check the last command state and indicate if failed and change the colors of the arrows
-    $dir = Get-FullPath -dir $pwd
+    $dir = Get-ShortPath -dir $pwd
     If ($lastCommandFailed) {
         $prompt += Write-Prompt -Object $dir -ForegroundColor $sl.Colors.WithForegroundColor
     }else{
