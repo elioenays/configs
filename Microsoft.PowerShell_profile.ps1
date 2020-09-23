@@ -16,4 +16,4 @@ Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineOption -PredictionSource History
 
 #Set the color for Prediction (auto-suggestion)
-Set-PSReadlineOption -Colors @{Prediction = 'DarkGreen' }
+Set-PSReadlineOption -Colors @{Prediction = '#686868' }
