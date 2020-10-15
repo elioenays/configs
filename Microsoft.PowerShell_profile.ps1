@@ -1,8 +1,10 @@
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-Theme Star
+Set-Theme newStar
 
 Import-Module PSReadLine
+
+Set-Variable www '~\www\'
 
 # Shows navigable menu of all options when hitting Tab
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
@@ -16,4 +18,4 @@ Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineOption -PredictionSource History
 
 #Set the color for Prediction (auto-suggestion)
-Set-PSReadlineOption -Colors @{Prediction = '#686868' }
+# Set-PSReadlineOption -Colors @{Prediction = '#686868' }
