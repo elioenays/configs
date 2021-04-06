@@ -1,6 +1,6 @@
 Import-Module posh-git
 Import-Module oh-my-posh
-Set-PoshPrompt -Theme Star
+Set-PoshPrompt ~\.oh-my-posh.omp.json
 
 Set-Variable www '~\www\'
 
