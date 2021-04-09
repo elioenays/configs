@@ -1,12 +1,11 @@
-# Inserts a blank line between shell prompts
 add_newline = true
 
-[hostname]
-ssh_only = false
-format =  "[$hostname]($style) in "
-trim_at = ".companyname.com"
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style) in "
 disabled = false
-style = "bold dimmed green"
+show_always = true
 
 [directory]
 truncation_length = 8
@@ -15,11 +14,11 @@ read_only = "🔒"
 truncation_symbol = "…/"
 
 [nodejs]
-format = "via [$symbol ($version )]($style)"
+format = "via [$symbol ($version)]($style)"
 symbol = "🤖"
 
 [dart]
-format = "via [$symbol ($version )]($style)"
+format = "via [$symbol ($version)]($style)"
 symbol = "🎯"
 detect_extensions = ['dart']
 style = "bold blue"
