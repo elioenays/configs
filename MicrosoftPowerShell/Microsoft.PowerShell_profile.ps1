@@ -1,8 +1,9 @@
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt ~\.oh-my-posh.omp.json
-
+# Import-Module posh-git
+# Import-Module oh-my-posh
+# Set-PoshPrompt -Theme c:\users\elioenay.silva\.oh-my-posh.omp.json
+Invoke-Expression (&starship init powershell)
 Set-Variable www '~\www\'
+# $ENV:STARSHIP_CONFIG = "$HOME\.config\config.toml"
 
 Import-Module PSReadLine
 
