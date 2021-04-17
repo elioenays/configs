@@ -10,12 +10,12 @@ show_always = true
 [directory]
 truncation_length = 8
 format = "[$path]($style) [$read_only]($read_only_style) "
-read_only = "🔒"
+read_only = " "
 truncation_symbol = "…/"
 
 [nodejs]
 format = "via [$symbol ($version)]($style)"
-symbol = "🤖"
+symbol = " "
 
 [dart]
 format = "via [$symbol ($version)]($style)"
@@ -29,3 +29,12 @@ detect_files = ["pubspec.yaml", "pubspec.yml", "pubspec.lock"]
 format = "$symbol"
 success_symbol = "[➜ ](bold green)"
 error_symbol = "[➜ ](bold red)"
+
+[package]
+symbol = " "
+
+[python]
+symbol = " "
+
+[git_branch]
+symbol = " "
