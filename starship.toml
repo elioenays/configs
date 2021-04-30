@@ -1,4 +1,7 @@
-add_newline = true
+[character]
+format = "$symbol"
+success_symbol = "[➜ ](bold green)"
+error_symbol = "[➜ ](bold red)"
 
 [username]
 style_user = "green bold"
@@ -14,21 +17,15 @@ read_only = " "
 truncation_symbol = "…/"
 
 [nodejs]
-format = "via [$symbol ($version)]($style)"
+format = "via [$symbol ($version)]($style) "
 symbol = " "
 
 [dart]
-format = "via [$symbol ($version)]($style)"
+format = "via [$symbol ($version)]($style) "
 symbol = "🎯"
 detect_extensions = ['dart']
 style = "bold blue"
 detect_files = ["pubspec.yaml", "pubspec.yml", "pubspec.lock"]
-
-# Replace the "❯" symbol in the prompt with "➜"
-[character]
-format = "$symbol"
-success_symbol = "[➜ ](bold green)"
-error_symbol = "[➜ ](bold red)"
 
 [package]
 symbol = " "
@@ -40,6 +37,5 @@ symbol = " "
 symbol = " "
 
 [cmd_duration]
-min_time = 500
-format = " took [$duration](bold yellow)"
+format = "took [$duration](bold yellow) "
 show_milliseconds = false
