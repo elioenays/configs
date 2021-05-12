@@ -1,3 +1,4 @@
+Set-location $home
 Invoke-Expression (&starship init powershell)
 Set-Variable www '~\www\'
 
