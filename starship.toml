@@ -29,6 +29,7 @@ style = "bold blue"
 detect_files = ["pubspec.yaml", "pubspec.yml", "pubspec.lock"]
 
 [package]
+disabled = true
 symbol = " "
 
 [python]
