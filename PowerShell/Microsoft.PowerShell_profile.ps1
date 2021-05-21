@@ -1,9 +1,12 @@
-Set-location $home
-Invoke-Expression (&starship init powershell)
+
+Import-Module oh-my-posh
+Set-PoshPrompt -Theme C:\Users\Eli\Documents\PowerShell\themes\.spaceship.omp.json
+
 Set-Variable www '~\www\'
 
 Import-Module PSReadLine
 
+# Shows navigable menu of all options when hitting Tab
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 
 # Autocompleteion for Arrow keys
@@ -13,3 +16,6 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 Set-PSReadLineOption -ShowToolTips
 Set-PSReadLineOption -PredictionSource History
+
+#Set the color for Prediction (auto-suggestion)
+# Set-PSReadlineOption -Colors @{Prediction = '#686868' }
