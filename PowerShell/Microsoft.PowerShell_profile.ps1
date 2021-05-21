@@ -1,4 +1,4 @@
-
+Clear-Host
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme C:\Users\Eli\Documents\PowerShell\themes\.spaceship.omp.json
 
