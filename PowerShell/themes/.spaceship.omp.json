@@ -33,11 +33,51 @@
           "properties": {
             "branch_icon": " <#ff94df><b> </b></>",
             "display_stash_count": true,
-            "display_status": false,
+            "display_status": true,
             "prefix": "<#ffffff>on</>"
           },
           "style": "plain",
           "type": "git"
+        },
+        {
+          "type": "dart",
+          "style": "plain",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#06A4CE",
+          "properties": {
+            "prefix": " \uE798 "
+          }
+        },
+        {
+          "type": "node",
+          "style": "plain",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#6CA35E",
+          "properties": {
+            "prefix": " <#fff>via</> \uE718 "
+          }
+        },
+        {
+          "type": "python",
+          "style": "plain",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#100e23",
+          "background": "#906cff",
+          "properties": {
+            "prefix": " \uE235 "
+          }
+        },
+
+        {
+          "type": "exit",
+          "style": "plain",
+          "foreground": "#C94A16",
+          "properties": {
+            "prefix": "x",
+            "display_exit_code": false
+          }
         }
       ],
       "type": "prompt",
