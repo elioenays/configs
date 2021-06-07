@@ -1,108 +1,70 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "blocks": [
-    {
-      "alignment": "left",
-      "horizontal_offset": 0,
-      "segments": [
-        {
-          "foreground": "lightYellow",
-          "invert_powerline": false,
-          "properties": {
-            "display_host": false,
-            "display_user": true,
-            "prefix": "",
-            "user_info_separator": ""
-          },
-          "style": "plain",
-          "type": "session"
-        },
-        {
-          "foreground": "cyan",
-          "invert_powerline": false,
-          "properties": {
+	"final_space": false,
+	"osc99": false,
+	"console_title": false,
+	"blocks": [
+		{
+			"type": "prompt",
+			"alignment": "left",
+			"horizontal_offset": 0,
+			"vertical_offset": 0,
+			"segments": [
+				{
+					"type": "session",
+					"style": "plain",
+					"invert_powerline": false,
+					"foreground": "lightYellow",
+					"properties": {
+						"display_host": false,
+						"prefix": "",
+						"user_info_separator": "",
+						"display_user": true
+					}
+				},
+				{
+					"type": "path",
+					"style": "plain",
+					"invert_powerline": false,
+					"foreground": "cyan",
+					"properties": {
             "prefix": "<#ffffff>in</> ",
-            "style": "folder"
-          },
-          "style": "plain",
-          "type": "path"
-        },
-        {
-          "foreground": "#ff94df",
-          "invert_powerline": false,
-          "properties": {
-            "branch_icon": " <#ff94df><b> </b></>",
-            "display_stash_count": true,
-            "display_status": true,
-            "prefix": "<#ffffff>on</>"
-          },
-          "style": "plain",
-          "type": "git"
-        },
-        {
-          "type": "dart",
-          "style": "plain",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#ffffff",
-          "background": "#06A4CE",
-          "properties": {
-            "prefix": " \uE798 "
-          }
-        },
-        {
-          "type": "node",
-          "style": "plain",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#ffffff",
-          "background": "#6CA35E",
-          "properties": {
-            "prefix": " <#fff>via</> \uE718 "
-          }
-        },
-        {
-          "type": "python",
-          "style": "plain",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#100e23",
-          "background": "#906cff",
-          "properties": {
-            "prefix": " \uE235 "
-          }
-        },
+						"style": "folder"
+					}
+				},
+				{
+					"type": "git",
+					"style": "plain",
+					"invert_powerline": false,
+					"foreground": "#ff94df",
+					"properties": {
+						"branch_icon": " <#ff94df><b> </b></>",
+						"display_stash_count": true,
+						"display_status": false,
+						"prefix": "<#ffffff>on</> "
+					}
+				}
 
-        {
-          "type": "exit",
-          "style": "plain",
-          "foreground": "#C94A16",
-          "properties": {
-            "prefix": "x",
-            "display_exit_code": false
-          }
-        }
-      ],
-      "type": "prompt",
-      "vertical_offset": 0
-    },
-    {
-      "type": "newline"
-    },
-    {
-      "alignment": "left",
-      "segments": [
-        {
-          "foreground": "#63F08C",
-          "properties": {
-            "prefix": "",
-            "text": "➜"
-          },
-          "style": "plain",
-          "type": "text"
-        }
-      ],
-      "type": "prompt"
-    }
-  ],
-  "console_title": false,
-  "final_space": false,
-  "osc99": false
+				
+			]
+		},
+		{
+			"type": "newline"
+		  },
+		  {
+			"alignment": "left",
+			"segments": [
+			  {
+				"foreground": "#63F08C",
+				"properties": {
+				  "prefix": "",
+				  "text": "➜"
+				},
+				"style": "plain",
+				"type": "text"
+			  }
+			],
+			"type": "prompt"
+		  }
+	]
 }
